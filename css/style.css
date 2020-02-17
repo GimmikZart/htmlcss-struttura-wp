@@ -5,3 +5,68 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  width: 100%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+header {
+  height: 250px;
+  /* debug */
+  background-color: yellow;
+  /* fine debug */
+}
+
+nav {
+  height: 50px;
+  /* debug */
+  background-color: grey;
+  /* fine debug */
+}
+
+main {
+  margin-top: 10px;
+}
+
+main::after {
+  content:"";
+  display: table;
+  clear: both;
+  /* debug */
+  background-color: black;
+  border: 1px solid red;
+  width: 100%;
+  /* fine debug */
+}
+
+aside {
+  background-color: pink;
+  width: 20%;
+  height: 200px;
+}
+
+.sinistra {
+  float: left;
+}
+
+section {
+  background-color: orange;
+  width: calc(60% - 20px);
+  margin-left:10px;
+  margin-right:10px;
+  height: 500px;
+  float:left;
+}
+
+.destra {
+  float:right;
+  }
+
+footer {
+  margin-top: 10px;
+  height: 100px;
+  width: 100%;
+  background-color: lightblue;
+}
